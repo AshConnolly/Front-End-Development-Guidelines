@@ -1,18 +1,17 @@
 # Front-End-Development-Guidelines
 An ongoing, continually updated, repository of my personal front end development guidelines
 
+###These guidelines utilize the following principles:
 * [Atomic Design](http://patternlab.io/)
 * Object-oriented SCSS for modular development 
 * [CSS guidelines](http://cssguidelin.es/) / [ITCSS](https://twitter.com/itcss_io) scss structure 
 * Loosely follows [BEM](https://css-tricks.com/bem-101/) to create clear CSS components but with less parent element name repetition and allowing low-level nesting. 
 
 ### Updates coming soon
-* Basic accessibility guidelines
-* Media query usage instructions
-* Further elements / components to be added to style guide
-* New grid system - susy / neat
+* Accessibility guidelines
+* Media query usage instructions 
 
-Brad Frost's Atomic Design and Harry Robert's CSSGuidlines / ITCSS share the same fundamental approach - begin with simple elements / atoms and building up to complex groups of elements / molecules. This works in favor of the cascade and reduces CSS specificity issues.
+Brad Frost's Atomic Design and Harry Robert's CSSGuidlines / ITCSS share the same fundamental approach - begin with simple elements / atoms and building up to complex groups of elements / molecules. This works in favor of the cascade and reduces CSS specificity issues and helps to create a truly flexible, modular, interface system.
 
 ###Further Reading
 Harry Roberts and Brad Frost have strongly influenced the guidelines set out below and I highly recommend giving them a read.
@@ -22,33 +21,40 @@ Harry Roberts and Brad Frost have strongly influenced the guidelines set out bel
 
 #Front End Guidelines
 
+###Why have guidelines?
+* Disorganised CSS structures make future updates very time ineffective and difficult
+* Updating poorly structured CSS can lead to unexpected style changes across the website, which may even break layout or prevent functionality.
+* Clear CSS structures speed up development
+* Guidelines help get multiple developers work in the same way to keep code bases consistent, making it easier for developers to move projects.
+
 ###CSS
-The CSS should aim to be object orientated to create reusable, flexible classes which makes future updates easy and logical. Write component based css inline with an atomic design methodology. 
+The CSS should aim to be object orientated to create reusable, flexible classes which make future updates easy and logical. Utilize component based css inline with an atomic design methodology. 
 
 ###Main objectives of CSS
 * Component driven
 * Object Orientated
 * Maintainable
 
-###Components
-Component based CSS keeps the code clean and modular. A BEM approach would be like this, note repeated parent class name and lack of nesting:
+###BEM or nested.
+BEM is a popular approach to managing CSS on large scale projects. A BEM approach to a component would be like this:
 ```
 .car {}
 	.car__wheel {}
 	.car__door {}
 ```
-When looking at both the HTML markup and the CSS it's often clear where and what the parent is. So it is acceptable to not reference the parent name in the child element class names. Instead we can use nesting for child elements when working with clear CSS components:
+If we dont use BEM we could we could use nesting for child elements:
 ```
 .car {
 	.wheel {}
 	.door {}
 }
 ```
+To use BEM or not usually depends on project scale. It is particularly useful for large projects allowing multiple devs to work in the same way to keep the codebase consisent. 
 
 ##Nesting and specificity
 Specificity can cause issues when working with the cascade, but if component nesting is kept low (ideally no more than 3) and clear, it will cause minimal problems. 
 
-BEM approach encourages having a unique class for every element, keeping all elements at the root of the cascade, eliminating any cascade entirely. However the cascade can be useful, speed up development and cause no issues if components are built responsibly with specificity in mind.
+BEM approach encourages having a unique class for every element, keeping all elements at the root of the cascade, eliminating any cascade entirely.
 
 ###Class names
 Classe names are all lower case and use underscores for spacing:   
@@ -60,7 +66,6 @@ Classe names are all lower case and use underscores for spacing:
 ```
 <div class="modal   modal--small"></div>
 ```
-
 
 ### Context vs component / element styles
 Implementation styles are based on context, visual styles are based on component / element.
