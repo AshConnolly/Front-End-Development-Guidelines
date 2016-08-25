@@ -7,9 +7,14 @@ An ongoing, continually updated, repository of my personal front end development
 * [CSS guidelines](http://cssguidelin.es/) / [ITCSS](https://twitter.com/itcss_io) scss structure 
 * Loosely follows [BEM](https://css-tricks.com/bem-101/) to create clear CSS components but with less parent element name repetition and allowing low-level nesting. 
 
-### Updates coming soon
+### Updates coming soon / To do
+* z-index usage
+* Harry Roberts 4 golden software 
+* using @at-root to keep component encapsulation
+* component based media queries - link to blog.
 * Accessibility guidelines
 * Media query usage instructions 
+
 
 Brad Frost's Atomic Design and Harry Robert's CSSGuidlines / ITCSS share the same fundamental approach - begin with simple elements / atoms and building up to complex groups of elements / molecules. This works in favor of the cascade and reduces CSS specificity issues and helps to create a truly flexible, modular, interface system.
 
@@ -34,6 +39,9 @@ The CSS should aim to be object orientated to create reusable, flexible classes 
 * Component driven
 * Object Orientated
 * Maintainable
+
+### Why used component based CSS?
+When building interfaces we are creating a system of elements and components that will be used in various combinations. If we keep this in mind we can create a truly fluid and flexible interface system - much like the brilliant [Brad Frost - Atomic Design](https://vimeo.com/67476280) approach. I've written about how atomic / component driven design can transition easily into component based css for better, easier development, see the article [here](https://medium.freecodecamp.com/a-more-seamless-workflow-style-guides-for-better-design-and-development-639fc55be28c#.2sd1cbhc6).
 
 ###BEM or nested.
 BEM is a popular approach to managing CSS on large scale projects. A BEM approach to a component would be like this:
