@@ -14,7 +14,11 @@ An ongoing, continually updated, repository of my personal front end development
 * component based media queries - link to blog.
 * Accessibility guidelines
 * Media query usage instructions 
-
+* MQ packer - reduce media queires in output
+* Performance
+  * server requests - combine + minify
+  * animation - jank free
+  * compositor layers - translate, will change
 
 Brad Frost's Atomic Design and Harry Robert's CSSGuidlines / ITCSS share the same fundamental approach - begin with simple elements / atoms and building up to complex groups of elements / molecules. This works in favor of the cascade and reduces CSS specificity issues and helps to create a truly flexible, modular, interface system.
 
