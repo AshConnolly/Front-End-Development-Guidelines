@@ -19,6 +19,7 @@ An ongoing, continually updated, repository of my personal front end development
   * server requests - combine + minify
   * animation - jank free
   * compositor layers - translate, will change
+  * svg
 
 Brad Frost's Atomic Design and Harry Robert's CSSGuidlines / ITCSS share the same fundamental approach - begin with simple elements / atoms and building up to complex groups of elements / molecules. This works in favor of the cascade and reduces CSS specificity issues and helps to create a truly flexible, modular, interface system.
 
