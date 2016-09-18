@@ -1,4 +1,4 @@
-# Front-End-Development-Guidelines
+# Front End Development Guidelines
 An ongoing, continually updated, repository of my personal front end development guidelines
 
 ###These guidelines utilize the following principles:
