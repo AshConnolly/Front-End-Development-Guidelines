@@ -8,10 +8,18 @@ An ongoing, continually updated, repository of my personal front end development
 * Loosely follows [BEM](https://css-tricks.com/bem-101/) to create clear CSS components but with less parent element name repetition and allowing low-level nesting. 
 
 ### Updates coming soon / To do
-* z-index usage
-* Harry Roberts - 4 software development principles 
+* z-index table usage with variables
+* Harry Roberts - 5 software development principles from 'CSS for Software Engineers for CSS Developers'
+  * Dry / single source of truth - mixins and variables for easier maintenence.
+  * The single responsibility principle - flexible atomic-like classes.
+  * Separation of concerns - do not couple markup and HTML, this creates inherent fragility.
+  * Immutability - utility classes should not be mutated, split into two classes if needed.
+  * Cyclomatic Complexity - specificity is like if statements, don't nest deeply, keep it simple.
+  * The open/closed principle - 'open for extension, closed for modification', don't change legacy code directly, instead use modifiers.
+  * Orthogonality - using component based CSS means components can be moved around with consistent results, creating a flexible modular system.
 * Using @at-root to keep component encapsulation
-* Component based media queries - link to blog.
+* Use mixins - not extend to avoid code bloat
+* Component based media queries - link to blog
 * Accessibility guidelines
 * Media query usage instructions 
 * MQ packer - reduce media queires in output
