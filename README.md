@@ -9,7 +9,7 @@ An ongoing, continually updated, repository of my personal front end development
 
 ### Updates coming soon / To do
 * z-index table usage with variables
-* Harry Roberts - 5 software development principles from 'CSS for Software Engineers for CSS Developers'
+* Harry Roberts - 5 software development principles from [CSS for Software Engineers for CSS Developers](https://speakerdeck.com/csswizardry/css-for-software-engineers-for-css-developers)
   * Dry / single source of truth - mixins and variables for easier maintenence.
   * The single responsibility principle - flexible atomic-like classes.
   * Separation of concerns - do not couple markup and HTML, this creates inherent fragility.
